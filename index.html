@@ -3,18 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site GitHub Pages</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mathieu COLIN - Administrateur Systèmes et Réseaux</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #fff;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            background: rgba(0,0,0,0.6);
+            position: relative;
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        header div {
+            max-width: 70%;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        h2 {
+            margin: 0.5rem 0 0 0;
+            font-weight: 400;
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+        .contact-info p {
+            margin: 0.3rem 0;
+            color: #eee;
+        }
+        .download-cv {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            padding: 0.8rem 1.5rem;
+            background: #ff7e5f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+        .download-cv:hover {
+            background: #feb47b;
+        }
+        section {
+            background: rgba(255,255,255,0.1);
+            margin: 2rem;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        section h3 {
+            margin-top: 0;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 0.5rem;
+            font-size: 1.8rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            header div {
+                text-align: center;
+                max-width: 100%;
+            }
+            .download-cv {
+                position: static;
+                margin-top: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon site !</h1>
+        <div>
+            <h1>Mathieu COLIN</h1>
+            <h2>Administrateur Systèmes et Réseaux</h2>
+            <div class="contact-info">
+                <p>Email : tonemail@example.com</p>
+                <p>Téléphone : tonnumero</p>
+                <p>Localisation : Draveil, France</p>
+            </div>
+        </div>
+        <img src="photo.jpg" alt="Photo de Mathieu Colin">
+        <a href="cv.pdf" class="download-cv" download>Télécharger le CV</a>
     </header>
-    <main>
-        <p>Ceci est mon site créé avec GitHub Pages. Vous pouvez ajouter du contenu ici.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Mon Site</p>
-    </footer>
+
+    <section>
+        <h3>Profil & Objectif</h3>
+        <p>Jeune diplômé (24 ans) d'un Master en Cybersécurité et Cloud Computing (IPSSI, 2022-2024), avec une solide expérience comme Administrateur systèmes et réseaux chez AM Trust. À la recherche d'une nouvelle opportunité pour relever de nouveaux défis en informatique. Permis B et véhiculé.</p>
+    </section>
+
+    <section>
+        <h3>Compétences Techniques</h3>
+        <ul>
+            <li>Réseaux : Switching, VLAN, Routage, Pare-feu (Watchguard), câblage, Supervision</li>
+            <li>Systèmes : Virtualisation (VMware Esxi, Proxmox), Administration Active Directory (AD), Microsoft 365, DHCP, DNS, Linux, Windows</li>
+            <li>Cloud & Suite Microsoft : Microsoft 365</li>
+            <li>Équipements & Logiciels : Watchguard, Cisco, Linux, Windows, GLPI, VMware Esxi, Proxmox</li>
+            <li>Support : Support technique et support utilisateurs</li>
+            <li>Certifications : Cisco ITE (2019)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Expérience Professionnelle</h3>
+        <ul>
+            <li>Administrateur systèmes et réseaux - AM Trust (Morangis) : Oct 2021 - Dec 2024. Support technique, gestion de projets, refonte et mise en place d'infrastructures.</li>
+            <li>Stages Technicien : Lycée Pierre-Gilles de Gennes (Paris, 2021), E-Surf Multimédia (Draveil, 2019), Elogie-Siemp (Paris, 2018).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Formation</h3>
+        <ul>
+            <li>Mastère Cybersécurité & Cloud computing - IPSSI, Paris (2022-2024)</li>
+            <li>Licence Pro Métiers des Réseaux Info. et Télécom. - Université d'Évry (2021-2022)</li>
+            <li>BTS SIO option SISR - Lycée Parc de Vilgénis, Massy (2019-2021)</li>
+            <li>BAC PRO Systèmes Numériques - Lycée André Marie Ampère, Morsang-sur-Orge (2016-2019)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Autres Informations</h3>
+        <ul>
+            <li>Langue : Anglais (Niveau débutant à intermédiaire, en cours d'amélioration)</li>
+            <li>Loisirs : Football, Musculation, Cinéma, Musique</li>
+            <li>Liens : Site web personnel (Wixsite), Profil LinkedIn</li>
+        </ul>
+    </section>
 </body>
 </html>
